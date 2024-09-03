@@ -1,6 +1,6 @@
 services:          #default synxtax
   frontendnginxfirst:        #naming convention for container
-    build: . #location of the docker file
+    build: /root/docker-healet/ #location of the docker file
     ports:     #port mapping my container to host port 
       - '80:80'  
     container_name: contfirst  #providing name to container
