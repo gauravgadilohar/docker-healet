@@ -1,11 +1,11 @@
 services:          #default synxtax
   frontendnginxfirst:        #naming convention for container
-    build: /opt/carvilla-docker/ #location of the docker file
+    build: . #location of the docker file
     ports:     #port mapping my container to host port 
       - '80:80'  
     container_name: contfirst  #providing name to container
     volumes:   #mounting persistent volume of my host to container
-      - myapp:/usr/share/nginx/html/
+      - myapp:/var/www/html/
     network_mode:   #providing network mode
         bridge
 
